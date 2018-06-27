@@ -61,6 +61,7 @@ public class HrisTest {
 
 	@Test(priority = 4)
 	public void FourthCase() {
+		obj.timeSheet();
 		Assert.assertTrue(obj.isTimesheetPage());
 		obj.logout();
 	}
