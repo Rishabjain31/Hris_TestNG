@@ -49,5 +49,9 @@ public class Hristestng {
 		return this.driver.getCurrentUrl().equals("https://hris.qainfotech.com:8086/time/timesheet");
 		
 	}
+	public void timeSheet() {
+		String value= driver.findElement(By.xpath("//div[@id='dv_2018-06-18']//child::span[@class='ng-binding'][1]")).getText();
+		System.out.println(value);
+	}
 }
 
